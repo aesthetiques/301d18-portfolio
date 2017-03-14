@@ -1,13 +1,21 @@
+/*assign a background picture, make no repeats, and create a specific margin for all page content;
+=============================================*/
 html {
   background: url('../img/home-background.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0 7.5%;
 }
+/*Adds an rgba background with opacity to every div element on the page
+=============================================*/
 .divs {
   border: solid black;
   margin: 30px 0px;
-  background-color: rgba(230, 230, 230, .45);
+  background-color: rgba(200, 200, 200, 0.70);
 }
+/*=============================================*/
+
+/*header and nav-bar special borders
+=============================================*/
 .header {
   height: 100px;
   text-align: left;
@@ -18,4 +26,21 @@ html {
   height: 50px;
   border: 2px dashed blue;
   margin: 0;
+}
+/*=============================================*/
+
+/*table of contents for the projects floated to the left of the slideshow*/
+.table-of-contents{
+  float: left;
+  width: 17.5%;
+  min-height: 300px;
+}
+.slideshow {
+  float: right;
+  width: 80%;
+  min-height: 300px;
+}
+/* Clear footer and projects from floats*/
+.projects footer{
+  clear: both;
 }
