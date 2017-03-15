@@ -172,8 +172,8 @@
   Later, this will be put into @media for larger screens
   =============================================*/
   .slideshow-div{
-    margin: 0px 5%;
-    width: 90%;
+    width: 95%;
+    margin: 0px 2.5%;
     overflow: hidden;
   }
   #slideshow-article .slideshow{
