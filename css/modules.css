@@ -2,31 +2,39 @@
 =============================================*/
 .divs {
   border: solid black;
-  margin: 30px 0px;
+  /*margin: 30px 0px;*/
   background-color: rgba(200, 200, 200, 0.70);
 }
+
 /*header and nav-bar special borders, fixed nav bar
 =============================================*/
 .nav-bar {
   top: 0px;
   position: fixed;
-  height: 50px;
-  width: 84%;
+  min-width: 85%;
+  height: 45px;
   border: 2px dashed blue;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(200, 200, 200, 0.70);
 }
-.header {
-  height: 100px;
+body .header {
+  position: absolute;
+  min-width: 85%;
+  height: 60px;
+  margin-top: 30px;
+  padding: 0;
   text-align: left;
   border: 2px dashed #FF0000;
+  background-color: rgba(200, 200, 200, 0.70);
 }
 /*table of contents for the projects floated to the left of the slideshow
 =============================================*/
 .table-of-contents{
   float: left;
   text-align: center;
-  width: 17.5%;
-  min-height: 300px;
+  width: 100%;
+  min-height: 100px;
   font-size: 35px;
 }
 .table-of-contents li{
@@ -36,8 +44,8 @@
   font-size: 25px;
 }
 #slideshow-article {
-  float: right;
-  width: 80%;
+  float: left;
+  width: 100%;
   min-height: 300px;
 }
 
@@ -52,17 +60,109 @@ Later, this will be put into @media for larger screens
 =============================================*/
 .slideshow-div{
   margin: 0px 5%;
+  width: 100%;
   overflow: hidden;
-  width: 1214.99px;
 }
 #slideshow-article .slideshow{
-  display: block;
-  width: 7290px;
+  /*display: block;*/
+  width: 90%;
   margin: 10px 0px;
   padding: 0px;
 }
 #slideshow-article .my-slides{
+  display: inline;
   float: left;
   list-style-type: none;
-  max-width: 100%;
+  /*max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;*/
+}
+
+/*Desktop Compatibility
+=========================================================================================*/
+@media screen and (min-width: 740px) {
+  /*Adds an rgba background with opacity to every div element on the page
+  =============================================*/
+  .divs {
+    border: solid black;
+    margin: 30px 0px;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+  /*header and nav-bar special borders, fixed nav bar
+  =============================================*/
+  .nav-bar {
+    display: block;
+    top: 0px;
+    position: fixed;
+    min-width: 85%;
+    height: 5%;
+    border: 2px dashed blue;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+  body .header {
+    display: block;
+    position: absolute;
+    min-width: 85%;
+    height: 7.5%;
+    margin-bottom: 100px;
+    padding: 0;
+    text-align: left;
+    border: 2px dashed #FF0000;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+  /*table of contents for the projects floated to the left of the slideshow
+  =============================================*/
+  .table-of-contents{
+    /*float: left;*/
+    display: block;
+    text-align: center;
+    max-width: 22.5%;
+    font-size: 35px;
+    margin-top: 15vh;
+  }
+  .table-of-contents li{
+    margin-left: 40px;
+    text-align: left;
+    list-style: lower-roman;
+    font-size: 25px;
+  }
+  #slideshow-article {
+    /*float: right;*/
+    display: block;
+    width: 75%;
+    min-height: 300px;
+    margin-top: 15vh;
+    margin-left: 1.25vw;
+  }
+
+  /* Clear footer and projects from floats slideshow
+  =============================================*/
+  .projects footer{
+    clear: both;
+  }
+
+  /*Creating Slideshow and setting locations
+  Later, this will be put into @media for larger screens
+  =============================================*/
+  .slideshow-div{
+    margin: 0px 5%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #slideshow-article .slideshow{
+    /*display: block;*/
+    width: 90%;
+    margin: 10px 0px;
+    padding: 0px;
+  }
+  #slideshow-article .my-slides{
+    list-style-type: none;
+    display: inline;
+    /*max-width: 100%;
+    min-height: 150px;
+    max-height: 300px;*/
+  }
+
 }

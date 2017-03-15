@@ -12,8 +12,8 @@ html {
 /*All imgs will resize in browser
 =============================================*/
 
-img{
-  width: 100%;
-  height: auto;
-   width: auto\9; /* ie8 */
+.my-slides img{
+  width: auto\9; /* ie8 */
+  max-width: 100%;
+  max-height: auto;
 }

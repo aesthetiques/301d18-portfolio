@@ -13,15 +13,15 @@ $(function(){
   var $mySlides = $slideshowContainer.find('.my-slides');
 
   //animate slideshow on 5s interval
-  setInterval(function(){
-    $slideshowContainer.animate({'margin-left': '-=' + slideWidth}, 1000, function(){
-      currentSlide ++;
-      if(currentSlide === $mySlides.length){
-        currentSlide = 1;
-        $slideshowContainer.css('margin-left', 0);
-      }
-    });
-  }, pause);
+  // setInterval(function(){
+  //   $slideshowContainer.animate({'margin-left': '-=' + slideWidth}, 1000, function(){
+  //     currentSlide ++;
+  //     if(currentSlide === $mySlides.length){
+  //       currentSlide = 1;
+  //       $slideshowContainer.css('margin-left', 0);
+  //     }
+  //   });
+  // }, pause);
   // intend this to be for the clicks on the arrows.
   // $mySlides.click(function(){
   //   $slideshowContainer.animate({'margin-left': '-=' + slideWidth}, 1000, function(){
