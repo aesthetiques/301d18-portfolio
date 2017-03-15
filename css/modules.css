@@ -9,20 +9,23 @@
 /*header and nav-bar special borders, fixed nav bar
 =============================================*/
 .nav-bar {
+  display: block;
   top: 0px;
   position: fixed;
   min-width: 85%;
-  height: 45px;
+  height: 5%;
   border: 2px dashed blue;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 1px;
   background-color: rgba(200, 200, 200, 0.70);
 }
 body .header {
+  display: block;
   position: absolute;
   min-width: 85%;
-  height: 60px;
-  margin-top: 30px;
+  height: 7.5%;
+  margin-top: 5%;
+  margin-bottom: 100px;
   padding: 0;
   text-align: left;
   border: 2px dashed #FF0000;
@@ -36,6 +39,7 @@ body .header {
   width: 100%;
   min-height: 100px;
   font-size: 35px;
+  margin-top: 15vh;
 }
 .table-of-contents li{
   margin-left: 40px;
