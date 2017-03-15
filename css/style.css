@@ -45,7 +45,7 @@ html {
   list-style: lower-roman;
   font-size: 25px;
 }
-.slideshow {
+.slideshow-article {
   float: right;
   width: 80%;
   min-height: 300px;
