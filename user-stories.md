@@ -12,3 +12,4 @@
 * Create Slideshow of screenshots on portfolio pages
   * There should be a "table of contents" <aside> next to this.
 * Create Clean margins and low opacity divs for the overall page
+* Create mobile ready view, since the beginning formatting of the slideshow is done.

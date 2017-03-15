@@ -1,0 +1,19 @@
+/*assign a background picture, make no repeats, and create a specific margin for all page content;
+=============================================*/
+html {
+  background: url('../img/home-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 20px 7.5% 0px 7.5%;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  min-height: 2000px;
+}
+
+/*All imgs will resize in browser
+=============================================*/
+
+img{
+  width: 100%;
+  height: auto;
+   width: auto\9; /* ie8 */
+}
