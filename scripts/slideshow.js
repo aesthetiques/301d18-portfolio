@@ -12,7 +12,7 @@ $(function(){
   var $slideshowContainer = $slideshowArticle.find('.slideshow');
   var $mySlides = $slideshowContainer.find('.my-slides');
 
-  //animate slideshow on 5s interval
+  // animate slideshow on 5s interval
   // setInterval(function(){
   //   $slideshowContainer.animate({'margin-left': '-=' + slideWidth}, 1000, function(){
   //     currentSlide ++;
@@ -22,6 +22,7 @@ $(function(){
   //     }
   //   });
   // }, pause);
+  //
   // intend this to be for the clicks on the arrows.
   // $mySlides.click(function(){
   //   $slideshowContainer.animate({'margin-left': '-=' + slideWidth}, 1000, function(){
