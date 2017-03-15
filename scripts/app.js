@@ -24,7 +24,7 @@ Article.prototype.toHtml = function() {
   return $newSlide;
 };
 
-slideshow.forEach(function(a) {
-  $('#slideshow').append(a.toHtml());
+slideshow.forEach(function(currentSlide) {
+  $('#slideshow').append(currentSlide.toHtml());
   console.log(a);
 });
