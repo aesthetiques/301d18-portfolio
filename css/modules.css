@@ -168,6 +168,11 @@ body .header {
     max-width: 22.5%;
     font-size: 35px;
   }
+  .main-intro{
+    float: left;
+    max-width: 70%;
+  }
+
   .table-of-contents li{
     margin-left: 40px;
     text-align: left;
