@@ -3,10 +3,12 @@
 html {
   background: url('../img/home-background.jpg') no-repeat center center fixed;
   background-size: cover;
-  margin: 20px 7.5% 0px 7.5%;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+  min-width: 85.25vw;
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
-  min-height: 2000px;
+  min-height: 200vw;
 }
 
 /*All imgs will resize in browser
