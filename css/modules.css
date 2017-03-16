@@ -60,9 +60,71 @@ body .header {
   clear: both;
 }
 
-/*Desktop Compatibility
+/*Desktop/non-ghetto tablets Compatibility
 =========================================================================================*/
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 740px) {
+  /*Adds an rgba background with opacity to every div element on the page
+  =============================================*/
+  .divs {
+    border: solid black;
+    margin: 30px 0px;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+  /*header and nav-bar special borders, fixed nav bar
+  =============================================*/
+  .nav-bar {
+    display: none;
+  }
+  .nav-burger{
+    font-size: 65px;
+    color: #131313;
+    float: right;
+  }
+  body .header {
+    display: block;
+    position: absolute;
+    min-width: 85%;
+    height: 7.5%;
+    margin-top: 3.25vh;
+    margin-bottom: 100px;
+    padding: 0;
+    text-align: left;
+    font-size: 65px;
+    border: 2px dashed #FF0000;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+  /*table of contents for the projects floated to the left of the slideshow
+  =============================================*/
+  .table-of-contents{
+    display: block;
+    text-align: center;
+    max-width: 22.5%;
+    font-size: 35px;
+  }
+  .table-of-contents li{
+    margin-left: 40px;
+    text-align: left;
+    list-style: lower-roman;
+    font-size: 25px;
+  }
+  #slideshow-article {
+    display: block;
+    width: 99.99%;
+    margin-top: 12.5vh;
+  }
+  #slideshow-article img{
+    background: rgba(013,013,013, .85);
+  }
+  /* Clear footer and projects from floats slideshow
+  =============================================*/
+  .projects footer{
+    clear: both;
+  }
+}
+
+/*Desktop/non-ghetto tablets Compatibility
+=========================================================================================*/
+@media screen and (min-width: 740px) {
   /*Adds an rgba background with opacity to every div element on the page
   =============================================*/
   .divs {
@@ -82,6 +144,9 @@ body .header {
     margin-top: 0px;
     margin-bottom: 1px;
     background-color: rgba(200, 200, 200, 0.70);
+  }
+  .nav-burger{
+    display: none;
   }
   body .header {
     display: block;
