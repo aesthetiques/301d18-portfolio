@@ -18,7 +18,7 @@
   border: 2px dashed blue;
   margin-top: 0px;
   margin-bottom: 1px;
-  background-color: rgba(200, 200, 200, 0.70);
+  background-color: rgba(013, 013, 013, 0.85);
   z-index: 2;
 }
 body .header {
@@ -27,7 +27,6 @@ body .header {
   min-width: 85vw;
   height: 7.5vh;
   margin-top: 5.2vh;
-  margin-bottom: 100px;
   padding: 0;
   text-align: left;
   border: 2px dashed #FF0000;
@@ -38,6 +37,7 @@ body .header {
 .table-of-contents{
   float: left;
   text-align: left;
+  margin-top: 0;
   min-width: 17.5vw;
   min-height: 100px;
   font-size: 0.85em;
@@ -86,7 +86,6 @@ body .header {
     min-width: 85vw;
     height: 5vh;
     margin-top: 5.2vh;
-    /*margin-bottom: 100px;*/
     padding-left: 0;
     padding-right: 0;
     text-align: left;
@@ -96,22 +95,24 @@ body .header {
   }
   /*table of contents for the projects floated to the left of the slideshow
   =============================================*/
-    .table-of-contents li{
-      margin-left: 1.15em;
-      text-align: left;
-      list-style: lower-roman;
-      font-size: 0.6em;
-    }
   .table-of-contents{
     display: block;
     text-align: center;
+    margin-top: 0;
     min-width: 17.5vw;
     max-width: 17.5vw;
     font-size: 0.75em;
     /*overflow: hidden;*/
   }
+  .table-of-contents li{
+    margin-left: 1.15em;
+    text-align: left;
+    list-style: lower-roman;
+    font-size: 0.6em;
+  }
   .main-intro{
     float: left;
+    margin-top: 0;
     margin-left: .5vw;
     margin-right: 0px;
     min-width: 65vw;
@@ -153,7 +154,14 @@ body .header {
     border: 2px dashed blue;
     margin-top: 0px;
     margin-bottom: 1px;
-    background-color: rgba(200, 200, 200, 0.70);
+    background-color: rgba(013, 013, 013, 0.85);
+  }
+  .nav-bar a{
+    font-size: 2em;
+    color: #EFE;
+    text-overflow: clip;
+    text-transform: lowercase;
+    text-decoration-line: none;
   }
   .nav-burger{
     display: none;
@@ -164,7 +172,6 @@ body .header {
     min-width: 85vw;
     height: 7.5vh;
     margin-top: 5.2vh;
-    margin-bottom: 100px;
     padding: 0;
     text-align: left;
     border: 2px dashed #FF0000;
@@ -175,12 +182,14 @@ body .header {
   .table-of-contents{
     display: block;
     text-align: center;
+    margin-top: 0;
     min-width: 17.5vw;
     max-width: 17.5vw;
     font-size: 0.85em;
   }
   .main-intro{
     float: left;
+    margin-top: 0;
     margin-left: 1.5vw;
     margin-right: 0;
     min-width: 65.25vw;
