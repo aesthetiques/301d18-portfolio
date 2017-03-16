@@ -1,23 +1,33 @@
 'use script';
-
+//USING OWLCAROUSEL2 FOR GENERATION OF THIS SLIDE
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:3
-      },
-      1000:{
-        items:5
-      }
-    }
+    items : 1,
+    slideSpeed : 2000,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    dots: true,
+    loop: true,
   });
 });
+//   $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//       0:{
+//         items:1
+//       },
+//       600:{
+//         items:3
+//       },
+//       1000:{
+//         items:5
+//       }
+//     }
+//   });
+// });
 
 //
 // $(function(){
