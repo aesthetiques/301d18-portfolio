@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="vendor/styles/reset.css">
+    <!-- owl carousel links -->
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title></title>
   </head>
@@ -56,15 +58,28 @@
       </div> -->
 
       <!-- Owl Carousel Formatting -->
-        <div class="owl-carousel divs" id="#slideshow-article">
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-        </div>
+      <div class="owl-carousel owl-theme" id="slideshow-article divs  ">
+        <ul class="slideshow">
+          <li class="item my-slides"><img src="img/slide-01.jpg" alt></li>
+          <li class="item my-slides"><img src="img/slide-02.jpg" alt></li>
+          <li class="item my-slides"><img src="img/slide-03.jpg" alt></li>
+          <li class="item my-slides"><img src="img/slide-04.jpg" alt></li>
+          <li class="item my-slides"><img src="img/slide-05.jpg" alt></li>
+          <li class="item my-slides"><img src="img/slide-06.jpg" alt></li>
+        </ul>
+          <!-- <div class="item"><h4><img src="img/slide-01.jpg" alt></h4></div>
+          <div class="item"><h4><img src="img/slide-01.jpg" alt></h4></div>
+          <div class="item"><h4><img src="img/slide-01.jpg" alt></h4></div>
+          <div class="item"><h4>4</h4></div>
+          <div class="item"><h4>5</h4></div>
+          <div class="item"><h4>6</h4></div>
+          <div class="item"><h4>7</h4></div>
+          <div class="item"><h4>8</h4></div>
+          <div class="item"><h4>9</h4></div>
+          <div class="item"><h4>10</h4></div>
+          <div class="item"><h4>11</h4></div>
+          <div class="item"><h4>12</h4></div> -->
+      </div>
 
       <!-- Slideshow buttons -->
       <!-- <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -99,12 +114,12 @@
     <footer class="footer borders">
       <!-- AS PER Owl Carousel Instructions -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script src="owl-carousel/owl.carousel.min.js"></script>
       <!-- ==================================== -->
     </footer>
-    <script type="text/javascript" src="/scripts/app.js">
+    <script type="text/javascript" src="scripts/app.js">
     </script>
-    <script type="text/javascript" src="/scripts/slideshow.js">
+    <script type="text/javascript" src="scripts/slideshow.js">
     </script>
   </body>
 </html>
