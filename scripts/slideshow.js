@@ -1,16 +1,20 @@
 'use script';
 
-$(function(){
-  //config of slide distance, and animation speed
-  var slideWidth = 1215;
-  var slideAnimationSpeed = 2000;
-  var pause = 2000;
-  var currentSlide = 1;
-
-  //grab DOM elements
-  var $slideshowArticle = $('#slideshow-article'); //<article class="slideshow-article divs>"
-  var $slideshowContainer = $slideshowArticle.find('.slideshow');
-  var $mySlides = $slideshowContainer.find('.my-slides');
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
+//
+// $(function(){
+//   //config of slide distance, and animation speed
+//   var slideWidth = 1215;
+//   var slideAnimationSpeed = 2000;
+//   var pause = 3000;
+//   var currentSlide = 1;
+//
+//   //grab DOM elements
+//   var $slideshowArticle = $('#slideshow-article'); //<article class="slideshow-article divs>"
+//   var $slideshowContainer = $slideshowArticle.find('.slideshow');
+//   var $mySlides = $slideshowContainer.find('.my-slides');
 
   // animate slideshow on 5s interval
   // setInterval(function(){
@@ -31,4 +35,4 @@ $(function(){
   //     }
   //   });
   // });
-});
+// });

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title></title>
   </head>
@@ -40,9 +42,9 @@
     </aside>
 
     <!-- Main setup for the slideshow -->
-    <article id="slideshow-article" class="divs">
+    <!-- <article id="slideshow-article" class="divs"> -->
       <!-- slideshow pictures -->
-      <div class="slideshow-div">
+      <!-- <div class="slideshow-div">
         <ul class="slideshow">
           <li class="my-slides"><img src="img/slide-01.jpg" alt></li>
           <li class="my-slides"><img src="img/slide-02.jpg" alt></li>
@@ -51,7 +53,18 @@
           <li class="my-slides"><img src="img/slide-05.jpg" alt></li>
           <li class="my-slides"><img src="img/slide-06.jpg" alt></li>
         </ul>
-      </div>
+      </div> -->
+
+      <!-- Owl Carousel Formatting -->
+        <div class="owl-carousel divs" id="#slideshow-article">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
 
       <!-- Slideshow buttons -->
       <!-- <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -83,7 +96,12 @@
 
 
     <!-- start footer -->
-    <footer class="footer borders">&nbsp;</footer>
+    <footer class="footer borders">
+      <!-- AS PER Owl Carousel Instructions -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <!-- ==================================== -->
+    </footer>
     <script type="text/javascript" src="/scripts/app.js">
     </script>
     <script type="text/javascript" src="/scripts/slideshow.js">
