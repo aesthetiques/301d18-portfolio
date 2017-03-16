@@ -19,13 +19,14 @@
   margin-top: 0px;
   margin-bottom: 1px;
   background-color: rgba(200, 200, 200, 0.70);
+  z-index: 2;
 }
 body .header {
   display: block;
   position: absolute;
   min-width: 85%;
   height: 7.5%;
-  margin-top: 5%;
+  margin-top: 3.25vh;
   margin-bottom: 100px;
   padding: 0;
   text-align: left;
@@ -40,7 +41,6 @@ body .header {
   width: 100%;
   min-height: 100px;
   font-size: 35px;
-  margin-top: 15vh;
 }
 .table-of-contents li{
   margin-left: 40px;
@@ -51,6 +51,7 @@ body .header {
 #slideshow-article {
   float: left;
   width: 100%;
+  margin-top: 12.5vh;
 }
 
 /* Clear footer and projects from floats slideshow
@@ -87,7 +88,7 @@ body .header {
     position: absolute;
     min-width: 85%;
     height: 7.5%;
-    margin-top: 3vh;
+    margin-top: 3.25vh;
     margin-bottom: 100px;
     padding: 0;
     text-align: left;
@@ -97,12 +98,10 @@ body .header {
   /*table of contents for the projects floated to the left of the slideshow
   =============================================*/
   .table-of-contents{
-    /*float: left;*/
     display: block;
     text-align: center;
     max-width: 22.5%;
     font-size: 35px;
-    margin-top: 15vh;
   }
   .table-of-contents li{
     margin-left: 40px;
@@ -112,11 +111,12 @@ body .header {
   }
   #slideshow-article {
     display: block;
-    width: 75%;
-    margin-top: 15vh;
-    margin-left: 1.25vw;
+    width: 99.99%;
+    margin-top: 12.5vh;
   }
-
+  #slideshow-article img{
+    background: rgba(013,013,013, .85);
+  }
   /* Clear footer and projects from floats slideshow
   =============================================*/
   .projects footer{
