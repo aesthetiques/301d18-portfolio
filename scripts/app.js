@@ -7,14 +7,6 @@ function Project(rawData){
   }
 }
 
-// function Project(rawData){
-//   this.title = rawData.title;
-//   this.contributors = rawData.contributors;
-//   this.class = rawData.class;
-//   this.week = rawData.week;
-//   this.projectUrl = rawData.projectUrl;
-// }
-
 Project.prototype.toHtml = function(){
   var source = $('#project-template').html();
   var templateRender = Handlebars.compile(source);
@@ -29,3 +21,11 @@ rawData.forEach(function(projectObject) {
 projects.forEach(function(addedProject){
   $('#projects-here').append(addedProject.toHtml());
 });
+
+// function Project(rawData){
+//   this.title = rawData.title;
+//   this.contributors = rawData.contributors;
+//   this.class = rawData.class;
+//   this.week = rawData.week;
+//   this.projectUrl = rawData.projectUrl;
+// }
