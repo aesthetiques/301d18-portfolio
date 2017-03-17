@@ -1,30 +1,31 @@
 'use strict';
-// var slideshow = [];
-//
-// function Slide (slideObject) {
-//
-//   this.title = slideObject.title;
-//   this.caption = slideObject.caption;
-//   this.summary = slideObject.summary;
-//   this.gitUrl = slideObject.gitUrl;
-// };
-//
-// Article.prototype.toHtml = function() {
-//   // clone the slide template
-//   var $newSlide = $('slide.template').clone();
-//
-//   //Slide template is now overwritten with our data
-//   $newSlide.removeClass('template');
-//
-//   //apply slide data to our template
-//   $newSlide.find('h1').text(this.title);
-//   $newSlide.find('address>a').html('href', this.gitUrl);
-//   $newSlide.find('.summary-body').html(this.summary);
-//   $newArticle.append('<hr>');
-//   return $newSlide;
-// };
-//
-// slideshow.forEach(function(currentSlide) {
-//   $('#slideshow').append(currentSlide.toHtml());
-//   console.log(a);
-// });
+var projects = [];
+
+function Project(rawData){
+  for(var key in rawData){
+    this[key] = rawData[key];
+  }
+}
+
+// function Project(rawData){
+//   this.title = rawData.title;
+//   this.contributors = rawData.contributors;
+//   this.class = rawData.class;
+//   this.week = rawData.week;
+//   this.projectUrl = rawData.projectUrl;
+// }
+
+Project.prototype.toHtml = function(){
+  var source = $('#project-template').html();
+  var templateRender = Handlebars.compile(source);
+  console.log(this);
+  return templateRender(this);
+};
+
+rawData.forEach(function(projectObject) {
+  projects.push(new Project(projectObject));
+});
+
+projects.forEach(function(addedProject){
+  $('#projects-here').append(addedProject.toHtml());
+});
