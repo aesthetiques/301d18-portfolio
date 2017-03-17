@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="css/modules.css">
     <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script id="project-template" type="text/x-handlebars-template">
+      <p>{{title}}</p>
+      <p>{{contributors}}</p>
+      <p>{{class}}</p>
+      <p>{{week}}</p>
+      <p>{{projectUrl}}</p>
+    </script>
     <title></title>
   </head>
 
@@ -56,27 +63,9 @@
       </aside>
       <article class="main-intro divs" name="about-me">
         <h1>Introduction</h1>
-
+        <section id="projects-here">
+        </section>
       </article>
-    <!-- insert new projects here, newest to oldest -->
-    <!-- <article class="projects divs" id="project-1"> &nbsp;
-    </article> -->
-
-    <!-- insert new projects here, newest to oldest -->
-    <!-- <article class="projects divs" id="project-2">&nbsp;
-    </article> -->
-
-    <!-- JACKED TEMPLATE FROM 301d18 lab 2 -->
-    <!-- <main>
-      <section id="slideshow">
-        <article class="template" data-category="cat">
-          <header>
-            <address><a href="#insertanchor here."><h1>Title</h1></a></address>
-          </header>
-          <section class="summary-body"></section>
-        </article>
-      </section>
-    </main> -->
 
 
 
@@ -85,11 +74,11 @@
       <!-- AS PER Owl Carousel Instructions -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="owl-carousel/owl.carousel.min.js"></script>
-      <!-- ==================================== -->
     </footer>
-    <script type="text/javascript" src="scripts/app.js">
-    </script>
-    <script type="text/javascript" src="scripts/slideshow.js">
-    </script>
+    <!-- JS Docs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script type="text/javascript" src="scripts/rawData.js"></script>
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>
