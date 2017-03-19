@@ -43,9 +43,8 @@ projectsView.handlePopulation = function() {
   });
 };
 
-$('#table-of-contents-link').on('click', function(){
-  $('article').fadeOut(500);
-  $('about').fadeIn(1000);
+$('#table-of-contents-link','*').on('click', function(){
+  $('article').hide();
   $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
 });
 
