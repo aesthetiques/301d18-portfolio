@@ -15,13 +15,17 @@
     <link rel="stylesheet" href="css/modules.css">
     <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
-      <p>{{title}}</p>
+      <article data-project="{{title}}" id="{{title}}">
+      <p>{{title}}</p
       <p>{{contributors}}</p>
       <p>{{class}}</p>
       <p>{{week}}</p>
       <p>{{projectUrl}}</p>
+    </article>
     </script>
+
     <title></title>
   </head>
 
@@ -31,7 +35,9 @@
     <!-- header below -->
     <nav class="nav-bar divs">
       <!-- Insert navigation items here -->
-      <a href="#table-of-contents">Projects</a>
+      <a href="#table-of-contents">
+        <strong>Projects</strong>
+      </a>
       <a href="#about-me">About</a>
       &nbsp;
     </nav>
@@ -49,25 +55,25 @@
           <div class="item"><img src="img/slide-03.jpg" alt></div>
           <div class="item"><img src="img/slide-04.jpg" alt></div>
           <div class="item"><img src="img/slide-05.jpg" alt></div>
-          <div class="item"><img src="img/slide-06.jpg" alt></div>
       </div>
+
       <!-- TABLE OF CONTENTS FLOATED LEFT ASIDE -->
       <aside class="table-of-contents divs">
-        <a name="table-of-contents">Contents</a>
-        <ul>
-          <li>Intro</li>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
+        <a name="table-of-contents portfolio-page">Contents</a>
+        <ul id="table-of-contents-list">
         </ul>
       </aside>
-      <article class="main-intro divs" name="about-me">
-        <h1>Introduction</h1>
-        <section id="projects-here">
-        </section>
-      </article>
+      <main id="projects-here" class="main-intro divs">
+        <!-- Add intro here, with the about me, -->
+        <article id="intro">
+        </article>
+        <!-- Add projects to this article -->
+        <article id="projects-here">
+        </article>
 
 
+
+      </main>
 
     <!-- start footer -->
     <footer class="footer borders">

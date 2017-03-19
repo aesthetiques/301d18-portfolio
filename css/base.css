@@ -19,3 +19,12 @@ html {
   max-width: 100%;
   max-height: auto;
 }
+
+/*All links will have no special formatting
+==============================================*/
+a{
+  color: #EFE;
+  text-overflow: clip;
+  text-transform: lowercase;
+  text-decoration-line: none;
+}
