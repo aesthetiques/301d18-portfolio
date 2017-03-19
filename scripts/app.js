@@ -51,9 +51,8 @@ projectsView.handlePopulation = function() {
       $(`article[data-author="${$(this).val()}"]`).fadeIn();
     } else {
       $('article').fadeIn();
-      // $('article.template').hide();
+      $('article.template').hide();
     }
-    // $('#category-filter').val('');
   });
 };
 
