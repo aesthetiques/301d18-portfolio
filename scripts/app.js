@@ -49,9 +49,8 @@ $('#table-of-contents-link','*').on('click', function(){
 });
 
 $('#home-nav').click(function(){
-  $('#filters').fadeIn(1000);
-  $('article').fadeIn(1000);
-  $('about').fadeOut(500);
+  $('article').hide();
+  $('main-nav-body').fadeIn(500);
 });
 
 $(document).ready(function(){
