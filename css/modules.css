@@ -118,6 +118,11 @@ body .header {
     min-width: 65vw;
     max-width: 65vw;
   }
+  .main-intro-big{
+    float: left;
+    margin-top: 0;
+    width: 85vw;
+  }
   #slideshow-article {
     display: block;
     width: 85vw;
