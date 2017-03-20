@@ -16,7 +16,7 @@ Project.prototype.toHtml = function(){
   // console.log(this);
   $('#table-of-contents-list').append(
   $('<li>').append(
-    $('<a>').attr('id', 'table-of-contents-link').addClass('the-projects').text(this.title)));
+    $('<a>').attr('id', 'table-of-contents-link').text(this.title)));
   return templateRender(this);
 };
 // push to projects array
@@ -55,15 +55,24 @@ $('#home-nav').click(function(){
   if($('#projects-here').hasClass('main-intro')){
     $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
   }
-  $('#projects-here').addClass('main-intro-big');
 });
-
-$('#portfolio-nav').on('click', function(){
+$('#portfolio-nav').click(function(){
+  $('#main-nav-body').hide();
+  if($('#projects-here').hasClass('main-intro-big')){
+    $('#projects-here').removeClass('main-intro-big').addClass('main-intro');
+  }
+  $('aside').fadeIn(800);
+  $('.the-projects').fadeIn(800);
+});
+$(document).ready(function(){
+  projectsView.handlePopulation();
+  $('aside').hide();
   $('article').hide();
+  $('#main-nav-body').fadeIn(500);
+  if($('#projects-here').hasClass('main-intro')){
+    $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
+  }
 });
-
-projectsView.handlePopulation();
-
 // function Project(rawData){
 //   this.title = rawData.title;
 //   this.contributors = rawData.contributors;
