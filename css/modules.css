@@ -195,6 +195,11 @@ body .header {
     min-width: 65.25vw;
     max-width: 65.25vw;
   }
+  .main-intro-big{
+    float: left;
+    margin-top: 0;
+    width: 85vw;
+  }
   .table-of-contents li{
     margin-left: 1.5em;
     text-align: left;

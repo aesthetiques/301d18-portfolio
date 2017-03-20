@@ -16,7 +16,7 @@ Project.prototype.toHtml = function(){
   // console.log(this);
   $('#table-of-contents-list').append(
   $('<li>').append(
-    $('<a>').attr('id', 'table-of-contents-link').text(this.title)));
+    $('<a>').attr('id', 'table-of-contents-link').addClass('the-projects').text(this.title)));
   return templateRender(this);
 };
 // push to projects array
@@ -42,20 +42,28 @@ projectsView.handlePopulation = function() {
     }
   });
 };
-
+// Change on-screen on click of link
+// ===========================================
 $('#table-of-contents-link','*').on('click', function(){
   $('article').hide();
   $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
 });
-
 $('#home-nav').click(function(){
+  $('aside').hide();
   $('article').hide();
-  $('main-nav-body').fadeIn(500);
+  $('#main-nav-body').fadeIn(500);
+  if($('#projects-here').hasClass('main-intro')){
+    $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
+  }
+  $('#projects-here').addClass('main-intro-big');
 });
 
-$(document).ready(function(){
-  projectsView.handlePopulation();
+$('#portfolio-nav').on('click', function(){
+  $('article').hide();
 });
+
+projectsView.handlePopulation();
+
 // function Project(rawData){
 //   this.title = rawData.title;
 //   this.contributors = rawData.contributors;
