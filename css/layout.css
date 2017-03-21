@@ -14,8 +14,8 @@
     display: block;
     text-align: center;
     margin-top: 0;
-    min-width: 17.5vw;
-    max-width: 17.5vw;
+    min-width: 19.5vw;
+    max-width: 19.5vw;
     font-size: 0.75em;
     overflow: wrap;
   }
@@ -30,8 +30,8 @@
     margin-top: 0;
     margin-left: .5vw;
     margin-right: 0px;
-    min-width: 65vw;
-    max-width: 65vw;
+    min-width: 63vw;
+    max-width: 63vw;
   }
   .main-intro-big{
     float: left;
@@ -73,7 +73,7 @@
     height: 5vh;
     border: 2px dashed blue;
     margin-top: 0px;
-    margin-bottom: 1px;
+    /*margin-bottom: 1px;*/
     background-color: rgba(013, 013, 013, 0.85);
   }
   .nav-bar a{

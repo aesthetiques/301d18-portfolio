@@ -12,6 +12,10 @@
   background-color: rgba(013, 013, 013, 0.85);
   z-index: 2;
 }
+.slide-left a:hover{
+  background-color: rgba(070, 070, 070, 0.85);
+  border-radius: .1em;
+}
 body .header {
   display: block;
   position: absolute;
@@ -58,22 +62,28 @@ body .header {
   }
   .nav-burger{
     cursor: pointer;
-    margin: .45em;
     float: right;
     font-size: 1em;
     color: rgba(800,800,900, .85);
     z-index: 5;
   }
   .slide-left{
+    font-size: 1em;
     cursor: pointer;
     font-size: 1em;
     color: rgba(800,800,900, 0.85);
     transition: all 1s;
     margin-left: 100%;
   }
+  div.slide-left.show{
+    font-size: 1em;
+  }
   .slide-left.show{
     margin-left: 0%;
   }
+  .slide-left.show a{
+  font-size: 1em;
+}
   body .header {
     display: block;
     position: absolute;
@@ -83,7 +93,7 @@ body .header {
     padding-left: 0;
     padding-right: 0;
     text-align: left;
-    font-size: 1.7em;
+    font-size: 1.65em;
     border: 2px dashed #FF0000;
     background-color: rgba(200, 200, 200, 0.70);
   }
