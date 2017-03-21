@@ -75,6 +75,13 @@ $(document).ready(function(){
     $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
   }
 });
+
+// expand menu in Mobile
+// ==============================================
+
+$('.nav-burger').on('click', function(){
+  $('.slide-left').toggleClass('show');
+});
 // function Project(rawData){
 //   this.title = rawData.title;
 //   this.contributors = rawData.contributors;
