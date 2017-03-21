@@ -3,23 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <!-- fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+    <!-- css sheets -->
     <link rel="stylesheet" href="vendor/styles/reset.css">
-    <!-- owl carousel links -->
-    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+
+    <!-- owl carousel links -->
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
+
     <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
       <article class="the-projects" data-project="{{title}}" id="{{title}}">
-      <h1>{{title}}</h1>
-      <h3>{{contributors}}</h3>
-      <h3>{{class}}, {{week}}</h3>
+      <h3>{{title}}</h3>
+      <h4>{{contributors}}</h4>
+      <h4>{{class}}, {{week}}</h4>
       <a href="{{projectUrl}}">Show me the money &rarr;</a>
     </article>
     </script>
@@ -35,12 +43,12 @@
       <a href="#home-nav" id="home-nav">Home</a>&nbsp;
       <a href="#about-me" id="about-me">About</a>&nbsp;
       <a href="#portfolio" id="portfolio-nav">Portfolio</a>&nbsp;
+      <nav class="nav-burger">&#9776;</nav>
     </nav>
 
     <header class="header divs">
       <!-- Insert Logo and Logo text here -->
-      IMALOGOHURR
-      <nav class="nav-burger">&#9776;</nav>
+      IMALOGO
     </header>
 
       <!-- Owl Carousel Formatting -->

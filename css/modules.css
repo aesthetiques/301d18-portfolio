@@ -1,3 +1,58 @@
-/*@media screen and (min-width: 740px) {
+/*header and nav-bar special borders, fixed nav bar
+=============================================*/
+.nav-bar {
+  display: block;
+  top: 0px;
+  position: fixed;
+  min-width: 85vw;
+  height: 5vh;
+  border: 2px dashed blue;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  background-color: rgba(013, 013, 013, 0.85);
+  z-index: 2;
+}
+body .header {
+  display: block;
+  position: absolute;
+  min-width: 85vw;
+  height: 7.5vh;
+  margin-top: 5.2vh;
+  padding: 0;
+  text-align: left;
+  border: 2px dashed #FF0000;
+  background-color: rgba(200, 200, 200, 0.70);
+}
+/*table of contents for the projects floated to the left of the slideshow
+=============================================*/
+.table-of-contents{
+  float: left;
+  text-align: left;
+  margin-top: 0;
+  min-width: 17.5vw;
+  min-height: 100px;
+  font-size: 0.85em;
+}
+.table-of-contents li{
+  margin-left: 1.5em;
+  text-align: left;
+  list-style: lower-roman;
+  font-size: 0.85em;
+}
+#slideshow-article {
+  float: left;
+  width: 85vw;
+  margin-top: 12.5vh;
+}
 
-}*/
+/* Clear footer and projects from floats slideshow
+=============================================*/
+.projects footer{
+  clear: both;
+}
+
+/*Mobile Compatible Menu
+=============================================*/
+@media only screen and (max-width: 740px) {
+
+}
