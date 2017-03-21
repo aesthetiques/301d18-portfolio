@@ -12,6 +12,17 @@ html {
   min-height: 200vw;
 }
 
+/*main article formatting
+=============================================*/
+main div{
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+main div h1, h2, h3{
+  text-align: center;
+}
+
 /*All imgs will resize in browser
 =============================================*/
 
