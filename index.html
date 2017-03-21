@@ -3,23 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <!-- fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+    <!-- css sheets -->
     <link rel="stylesheet" href="vendor/styles/reset.css">
-    <!-- owl carousel links -->
-    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+
+    <!-- owl carousel links -->
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
+
     <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
       <article class="the-projects" data-project="{{title}}" id="{{title}}">
-      <h1>{{title}}</h1>
-      <h3>{{contributors}}</h3>
-      <h3>{{class}}, {{week}}</h3>
+      <h3>{{title}}</h3>
+      <h4>{{contributors}}</h4>
+      <h4>{{class}}, {{week}}</h4>
       <a href="{{projectUrl}}">Show me the money &rarr;</a>
     </article>
     </script>
@@ -32,15 +40,17 @@
     <!-- header below -->
     <nav class="nav-bar divs">
       <!-- Insert navigation items here -->
-      <a href="#home-nav" id="home-nav">Home</a>&nbsp;
-      <a href="#about-me" id="about-me">About</a>&nbsp;
-      <a href="#portfolio" id="portfolio-nav">Portfolio</a>&nbsp;
+      <nav class="nav-burger">&#9776;</nav>
+      <div class="slide-left">
+        <a href="#home-nav" id="home-nav">Home</a>
+        <a href="#about-me" id="about-me">About</a>
+        <a href="#portfolio" id="portfolio-nav">Portfolio</a>
+      </div>
     </nav>
 
     <header class="header divs">
       <!-- Insert Logo and Logo text here -->
-      IMALOGOHURR
-      <nav class="nav-burger">&#9776;</nav>
+      IMALOGO
     </header>
 
       <!-- Owl Carousel Formatting -->
@@ -63,7 +73,23 @@
       <main id="projects-here" class="main-intro divs">
         <!-- Add intro here, with the about me, -->
         <article id="main-nav-body">
-          Bird Bird Bird
+          <div>
+            <h1>Lorem Ipsum</h1>
+            <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+            <h4>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h4>
+          </div>
+          <br>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim massa et urna ullamcorper, id scelerisque sapien viverra. Quisque vel elit porttitor, condimentum ante at, sollicitudin neque. Curabitur non tempor purus, non mattis mi. Phasellus varius iaculis sapien, a lobortis eros ornare a. Curabitur suscipit nibh justo, et elementum metus pulvinar ac. Donec ac justo sem. Proin pulvinar pretium nisi ac viverra. Pellentesque id dignissim enim, id tristique sapien.</p>
+
+            <p>Mauris placerat est nec ultrices venenatis. Integer est leo, hendrerit a consectetur id, tempus eget ligula. Etiam et lacinia sem, sed tincidunt quam. Duis molestie est velit, non posuere elit facilisis non. In porttitor efficitur dapibus. Duis rutrum enim non purus pharetra, non interdum massa placerat. Etiam lorem nulla, luctus sed nulla in, tempor eleifend dolor. Aliquam molestie sem eget accumsan suscipit. Curabitur quis dui lorem.</p>
+
+            <p>Donec eget porttitor augue, id scelerisque leo. Praesent vitae dignissim erat. Nullam turpis risus, fringilla quis purus eu, efficitur pulvinar nisi. Sed in quam fermentum, sollicitudin sem a, bibendum est. Curabitur vel leo urna. Pellentesque non purus nec nulla sollicitudin egestas. Duis semper et ligula porta luctus. Duis bibendum urna eu ipsum auctor suscipit. Morbi sed orci ac dui sollicitudin egestas. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <p>Cras consequat libero ornare, ultricies odio vitae, interdum erat. Suspendisse venenatis efficitur velit a varius. Nam tristique massa quis ante ultrices posuere. Quisque ultrices enim diam, ut vehicula magna pharetra id. Donec imperdiet ipsum fermentum, suscipit elit sit amet, ornare urna. Integer erat tortor, ornare ullamcorper ante cursus, egestas hendrerit lacus. Sed elementum enim quis massa luctus congue. Suspendisse eget venenatis lacus, ut porttitor nibh.</p>
+
+            <p>Vivamus iaculis blandit dictum. Ut tincidunt hendrerit ligula nec euismod. Nulla facilisi. Donec ipsum elit, commodo sit amet justo sit amet, facilisis blandit dui. Nam sed tortor orci. Sed scelerisque faucibus risus in pharetra. Cras ullamcorper dapibus sem, ut varius nulla ultricies at. Suspendisse metus justo, vehicula in metus in, mattis pharetra orci.</p>
+          </div>
         </article>
         <!-- Add projects to this article -->
         <article id="projects-here-pls">
