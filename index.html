@@ -8,7 +8,6 @@
     <!-- owl carousel links -->
     <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -17,12 +16,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
-      <article data-project="{{title}}" id="{{title}}">
-      <p>{{title}}</p
-      <p>{{contributors}}</p>
-      <p>{{class}}</p>
-      <p>{{week}}</p>
-      <p>{{projectUrl}}</p>
+      <article class="the-projects" data-project="{{title}}" id="{{title}}">
+      <h1>{{title}}</h1>
+      <h3>{{contributors}}</h3>
+      <h3>{{class}}, {{week}}</h3>
+      <a href="{{projectUrl}}">Show me the money &rarr;</a>
     </article>
     </script>
 
@@ -30,14 +28,13 @@
   </head>
 
   <body>
-    <!-- all elements getting a divs class assignment for formatting -->
 
     <!-- header below -->
     <nav class="nav-bar divs">
       <!-- Insert navigation items here -->
       <a href="#home-nav" id="home-nav">Home</a>&nbsp;
       <a href="#about-me" id="about-me">About</a>&nbsp;
-      <a href="#portfolio" id="portfolio">Portfolio</a>&nbsp;
+      <a href="#portfolio" id="portfolio-nav">Portfolio</a>&nbsp;
     </nav>
 
     <header class="header divs">
@@ -61,13 +58,16 @@
         <ul id="table-of-contents-list">
         </ul>
       </aside>
+
+      <!-- main document body -->
       <main id="projects-here" class="main-intro divs">
         <!-- Add intro here, with the about me, -->
         <article id="main-nav-body">
           Bird Bird Bird
         </article>
         <!-- Add projects to this article -->
-
+        <article id="projects-here-pls">
+        </article>
 
 
       </main>

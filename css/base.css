@@ -10,13 +10,13 @@ html {
   font-weight: bold;
   min-height: 200vw;
 }
-
+  
 /*All imgs will resize in browser
 =============================================*/
 
 .my-slides img{
   width: auto\9; /* ie8 */
-  max-width: 100%;
+  max-width: 80%;
   max-height: auto;
 }
 
