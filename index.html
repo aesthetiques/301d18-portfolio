@@ -8,7 +8,6 @@
     <!-- owl carousel links -->
     <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -18,11 +17,10 @@
     <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
       <article class="the-projects" data-project="{{title}}" id="{{title}}">
-      <p>{{title}}</p
-      <p>{{contributors}}</p>
-      <p>{{class}}</p>
-      <p>{{week}}</p>
-      <p>{{projectUrl}}</p>
+      <h1>{{title}}</h1>
+      <h3>{{contributors}}</h3>
+      <h3>{{class}}, {{week}}</h3>
+      <a href="{{projectUrl}}">Show me the money &rarr;</a>
     </article>
     </script>
 
@@ -30,7 +28,6 @@
   </head>
 
   <body>
-    <!-- all elements getting a divs class assignment for formatting -->
 
     <!-- header below -->
     <nav class="nav-bar divs">

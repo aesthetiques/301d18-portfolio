@@ -1,6 +1,5 @@
 'use strict';
 var projects = [];
-
 var projectsView = {};
 
 function Project(rawData){
@@ -48,6 +47,7 @@ $('#table-of-contents-link','*').on('click', function(){
   $('article').hide();
   $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
 });
+
 $('#home-nav').click(function(){
   $('aside').hide();
   $('article').hide();
@@ -56,6 +56,7 @@ $('#home-nav').click(function(){
     $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
   }
 });
+
 $('#portfolio-nav').click(function(){
   $('#main-nav-body').hide();
   if($('#projects-here').hasClass('main-intro-big')){
@@ -64,11 +65,12 @@ $('#portfolio-nav').click(function(){
   $('aside').fadeIn(800);
   $('.the-projects').fadeIn(800);
 });
+
 $(document).ready(function(){
   projectsView.handlePopulation();
   $('aside').hide();
   $('article').hide();
-  $('#main-nav-body').fadeIn(500);
+  $('#main-nav-body').fadeIn(800);
   if($('#projects-here').hasClass('main-intro')){
     $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
   }

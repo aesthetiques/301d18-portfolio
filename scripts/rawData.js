@@ -23,7 +23,7 @@ var rawData = [
     contributors: 'Caleb Wells',
     class: '201',
     week: 'Week 3',
-    projectUrl: 'https://aesthetiques.github.io/buss-mall/index.html/',
+    projectUrl: 'https://aesthetiques.github.io/buss-mall/',
     screenshot: '../img/blank.png',
   },
   {
