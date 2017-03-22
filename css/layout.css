@@ -44,6 +44,9 @@
     margin-top: 12.5vh;
   }
   #slideshow-article img{
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 80%;
     background: rgba(013,013,013, .85);
   }
   /* Clear footer and projects from floats slideshow
@@ -132,6 +135,9 @@
     margin-top: 12.5vh;
   }
   #slideshow-article img{
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 60%;
     background: rgba(013,013,013, .85);
   }
   /* Clear footer and projects from floats slideshow
