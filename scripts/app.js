@@ -30,6 +30,7 @@ Project.fetchAll = function(){
     projects.forEach(function(addedProject){
       $('#projects-here').append(addedProject.toHtml());
     });
+    Project.addAllHandlers();
   }else{
     $.getJSON('/data/rawData.json')
     //if success:
@@ -41,6 +42,7 @@ Project.fetchAll = function(){
       projects.forEach(function(addedProject){
         $('#projects-here').append(addedProject.toHtml());
       });
+      Project.addAllHandlers();
       localStorage.rawData = JSON.stringify(data);
     });
   }
@@ -68,31 +70,6 @@ Project.fetchAll = function(){
 //     }
 //   });
 // };
-// Change on-screen on click of link
-// ===========================================
-console.log('working');
-$('#table-of-contents-link','*').on('click', function(){
-  $('article').hide();
-  $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
-});
-
-$('#home-nav').click(function(){
-  $('aside').hide();
-  $('article').hide();
-  $('#main-nav-body').fadeIn(500);
-  if($('#projects-here').hasClass('main-intro')){
-    $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
-  }
-});
-
-$('#portfolio-nav').click(function(){
-  $('#main-nav-body').hide();
-  if($('#projects-here').hasClass('main-intro-big')){
-    $('#projects-here').removeClass('main-intro-big').addClass('main-intro');
-  }
-  $('aside').fadeIn(800);
-  $('.the-projects').fadeIn(800);
-});
 
 $(document).ready(function(){
   Project.fetchAll();
@@ -104,9 +81,36 @@ $(document).ready(function(){
   }
 });
 
+Project.addAllHandlers = function(){
+// Change on-screen on click of link
+// ===========================================
+  console.log('working');
+  $('#table-of-contents-list a').on('click', function(){
+    $('article').hide();
+    $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
+  });
+
+  $('#home-nav').click(function(){
+    $('aside').hide();
+    $('article').hide();
+    $('#main-nav-body').fadeIn(500);
+    if($('#projects-here').hasClass('main-intro')){
+      $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
+    }
+  });
+
+  $('#portfolio-nav').click(function(){
+    $('#main-nav-body').hide();
+    if($('#projects-here').hasClass('main-intro-big')){
+      $('#projects-here').removeClass('main-intro-big').addClass('main-intro');
+    }
+    $('aside').fadeIn(800);
+    $('.the-projects').fadeIn(800);
+  });
 // expand menu in Mobile
 // ==============================================
 
-$('.nav-burger').on('click', function(){
-  $('.slide-left').toggleClass('show');
-});
+  $('.nav-burger').on('click', function(){
+    $('.slide-left').toggleClass('show');
+  });
+};
