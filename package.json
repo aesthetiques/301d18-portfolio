@@ -1,0 +1,23 @@
+{
+  "name": "301d18-portfolio",
+  "version": "1.0.0",
+  "description": "CW 301 portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aesthetiques/301d18-portfolio.git"
+  },
+  "author": "Veslan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aesthetiques/301d18-portfolio/issues"
+  },
+  "homepage": "https://github.com/aesthetiques/301d18-portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
