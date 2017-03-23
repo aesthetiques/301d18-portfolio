@@ -21,8 +21,3 @@ app.listen(PORT, function() {
   console.log('you are on port number: ' + PORT + ', sucka.');
   //Log to the console a message that lets you know which port your server has started on
 });
-//Write a new route that will handle a request and send the new.html file back to the user
-app.get('/new', function(request, response){
-  console.log('Make a new page');
-  response.sendFile('public/new.html', {root: '.'});
-});
