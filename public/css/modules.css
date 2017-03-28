@@ -12,7 +12,7 @@
   background-color: rgba(013, 013, 013, 0.85);
   z-index: 2;
 }
-.slide-left a:hover{
+.slide-left a:hover, .slide-left a:focus{
   background-color: rgba(070, 070, 070, 0.85);
   border-radius: .1em;
 }

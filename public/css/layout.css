@@ -20,7 +20,7 @@
     overflow: wrap;
   }
   .table-of-contents li{
-    margin-left: 1.15em;
+    margin-left: 0.85em;
     text-align: left;
     list-style: lower-roman;
     font-size: 0.6em;

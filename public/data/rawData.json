@@ -5,7 +5,8 @@
     "class":"301",
     "week":"Week 1",
     "projectUrl":"https://aesthetiques.github.io/05-form-building/",
-    "screenshot":"../img/blank.png"
+    "screenshot":"../img/blank.png",
+    "goal":"this is mah goal."
   },
   {
     "title":"Swole Devs",
@@ -13,7 +14,8 @@
     "class":"201",
     "week":"Week 4",
     "projectUrl":"https://aesthetiques.github.io/swole_devs/",
-    "screenshot":"../img/get-fit.png"
+    "screenshot":"../img/get-fit.png",
+    "goal":"this is mah goal."
   },
   {
     "title":"Bus Mall",
@@ -21,7 +23,8 @@
     "class":"201",
     "week":"Week 3",
     "projectUrl":"https://aesthetiques.github.io/buss-mall/",
-    "screenshot":"../img/bus-mall-main-page.png"
+    "screenshot":"../img/bus-mall-main-page.png",
+    "goal":"this is mah goal."
   },
   {
     "title":"Salmon Cookies",
@@ -29,7 +32,8 @@
     "class":"201",
     "week":"Week 2",
     "projectUrl":"https://aesthetiques.github.io/Salmon-Cookies/",
-    "screenshot":"../img/salmon-cookies-main-page.png"
+    "screenshot":"../img/salmon-cookies-main-page.png",
+    "goal":"this is mah goal."
   },
   {
     "title":"About Me",
@@ -37,6 +41,7 @@
     "class":"201",
     "week":"Week 1",
     "projectUrl":"https://aesthetiques.github.io/About-Me/",
-    "screenshot":"../img/about-me.png"
+    "screenshot":"../img/about-me.png",
+    "goal":"this is mah goal."
   }
 ]
