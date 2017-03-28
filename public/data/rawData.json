@@ -13,7 +13,7 @@
     "class":"201",
     "week":"Week 4",
     "projectUrl":"https://aesthetiques.github.io/swole_devs/",
-    "screenshot":"../img/getFit.png"
+    "screenshot":"../img/get-fit.png"
   },
   {
     "title":"Bus Mall",
@@ -21,7 +21,7 @@
     "class":"201",
     "week":"Week 3",
     "projectUrl":"https://aesthetiques.github.io/buss-mall/",
-    "screenshot":"../img/blank.png"
+    "screenshot":"../img/bus-mall-main-page.png"
   },
   {
     "title":"Salmon Cookies",
@@ -29,7 +29,7 @@
     "class":"201",
     "week":"Week 2",
     "projectUrl":"https://aesthetiques.github.io/Salmon-Cookies/",
-    "screenshot":"../img/blank.png"
+    "screenshot":"../img/salmon-cookies-main-page.png"
   },
   {
     "title":"About Me",
@@ -37,6 +37,6 @@
     "class":"201",
     "week":"Week 1",
     "projectUrl":"https://aesthetiques.github.io/About-Me/",
-    "screenshot":"../img/blank.png"
+    "screenshot":"../img/about-me.png"
   }
 ]

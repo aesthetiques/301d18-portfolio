@@ -20,26 +20,26 @@ Project.prototype.toHtml = function(){
 };
 // AJAX/JSON UGHHHH
 // ==============================================
-Project.fetchAll = function(){
+Project.fetchAll = () => {
   console.log('calling');
   if(localStorage.rawData){
     let rawData = JSON.parse(localStorage.rawData);
-    rawData.forEach(function(projectObject){
+    rawData.forEach((projectObject) => {
       projects.push(new Project(projectObject));
     });
-    projects.forEach(function(addedProject){
+    projects.forEach((addedProject) => {
       $('#projects-here').append(addedProject.toHtml());
     });
     Project.addAllHandlers();
   }else{
     $.getJSON('/data/rawData.json')
     //if success:
-    .then(function(data){
+    .then((data) => {
       console.log(data);
-      data.forEach(function(projectObject){
+      data.forEach((projectObject) => {
         projects.push(new Project(projectObject));
       });
-      projects.forEach(function(addedProject){
+      projects.forEach((addedProject) => {
         $('#projects-here').append(addedProject.toHtml());
       });
       Project.addAllHandlers();
@@ -71,7 +71,7 @@ Project.fetchAll = function(){
 //   });
 // };
 
-$(document).ready(function(){
+$(document).ready(() => {
   Project.fetchAll();
   $('aside').hide();
   $('article').hide();
@@ -81,7 +81,7 @@ $(document).ready(function(){
   }
 });
 
-Project.addAllHandlers = function(){
+Project.addAllHandlers = () => {
 // Change on-screen on click of link
 // ===========================================
   console.log('working');
@@ -90,7 +90,7 @@ Project.addAllHandlers = function(){
     $(`article[data-project="${$(this).text()}"]`).fadeIn(1000);
   });
 
-  $('#home-nav').click(function(){
+  $('#home-nav').click(() => {
     $('aside').hide();
     $('article').hide();
     $('#main-nav-body').fadeIn(500);
@@ -99,7 +99,7 @@ Project.addAllHandlers = function(){
     }
   });
 
-  $('#portfolio-nav').click(function(){
+  $('#portfolio-nav').click(() => {
     $('#main-nav-body').hide();
     if($('#projects-here').hasClass('main-intro-big')){
       $('#projects-here').removeClass('main-intro-big').addClass('main-intro');
@@ -110,7 +110,7 @@ Project.addAllHandlers = function(){
 // expand menu in Mobile
 // ==============================================
 
-  $('.nav-burger').on('click', function(){
+  $('.nav-burger').on('click', () => {
     $('.slide-left').toggleClass('show');
   });
 };

@@ -46,6 +46,11 @@
   #slideshow-article img{
     background: rgba(013,013,013, .85);
   }
+  .the-projects img{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  }
   /* Clear footer and projects from floats slideshow
   =============================================*/
   .projects footer{
@@ -133,6 +138,11 @@
   }
   #slideshow-article img{
     background: rgba(013,013,013, .85);
+  }
+  .the-projects img{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   }
   /* Clear footer and projects from floats slideshow
   =============================================*/
