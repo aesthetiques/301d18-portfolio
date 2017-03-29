@@ -5,8 +5,8 @@
   top: 0px;
   position: fixed;
   min-width: 85vw;
-  height: 4.5vh;
-  border: 2px dashed blue;
+  height: 5vh;
+  /*border: 2px dashed blue;*/
   margin-top: 0px;
   margin-bottom: 1px;
   background-color: rgba(013, 013, 013, 0.85);
@@ -21,10 +21,10 @@ body .header {
   position: absolute;
   min-width: 85vw;
   height: 7.5vh;
-  margin-top: 4.8vh;
+  margin-top: 5vh;
   padding: 0;
   text-align: left;
-  border: 2px dashed #FF0000;
+  /*border: 2px dashed #FF0000;*/
   background-color: rgba(200, 200, 200, 0.70);
 }
 /*table of contents for the projects floated to the left of the slideshow

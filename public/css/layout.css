@@ -76,9 +76,8 @@
     position: fixed;
     min-width: 85vw;
     height: 5vh;
-    border: 2px dashed blue;
+    /*border: 2px dashed blue;*/
     margin-top: 0px;
-    /*margin-bottom: 1px;*/
     background-color: rgba(013, 013, 013, 0.85);
   }
   .nav-bar a{
@@ -99,7 +98,7 @@
     margin-top: 5.2vh;
     padding: 0;
     text-align: left;
-    border: 2px dashed #FF0000;
+    /*border: 2px dashed #FF0000;*/
     background-color: rgba(200, 200, 200, 0.70);
   }
   /*table of contents for the projects floated to the left of the slideshow
