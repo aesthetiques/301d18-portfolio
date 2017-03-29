@@ -8,6 +8,8 @@
     margin: 30px 0px;
     background-color: rgba(200, 200, 200, 0.70);
   }
+  /*Adds some header adjustments.
+  =============================================*/
   body .header {
     display: block;
     position: absolute;

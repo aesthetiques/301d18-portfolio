@@ -1,5 +1,12 @@
 /*table of contents for the projects floated to the left of the slideshow
 =============================================*/
+.slide-left a{
+  line-height: 1.15;
+  margin-right: .3em;
+}
+.slide-left a:hover{
+  background-color: rgba(070, 070, 070, 0.85);
+}
 .table-of-contents{
   float: left;
   text-align: left;
@@ -41,7 +48,6 @@
   }
   .slide-left a:hover, .slide-left a:focus{
     background-color: rgba(070, 070, 070, 0.85);
-    border-radius: .1em;
   }
   .nav-bar {
     overflow: hidden;

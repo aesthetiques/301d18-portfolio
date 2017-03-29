@@ -26,10 +26,10 @@
   Project.fetchAll = () => {
     if(localStorage.rawData){
       let rawData = JSON.parse(localStorage.rawData);
-      rawData.forEach((projectObject) => {
+      rawData.map((projectObject) => {
         projects.push(new Project(projectObject));
       });
-      projects.forEach((addedProject) => {
+      projects.map((addedProject) => {
         $('#projects-here').append(addedProject.toHtml());
       });
       Project.addAllHandlers();
@@ -37,10 +37,10 @@
       $.getJSON('./data/rawData.json')
       //if success:
       .then((data) => {
-        data.forEach((projectObject) => {
+        data.map((projectObject) => {
           projects.push(new Project(projectObject));
         });
-        projects.forEach((addedProject) => {
+        projects.map((addedProject) => {
           $('#projects-here').append(addedProject.toHtml());
         });
         Project.addAllHandlers();
