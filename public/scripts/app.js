@@ -1,20 +1,20 @@
 'use strict';
 
 (function(module){
-  var projects = [];
+  let projects = [];
 
   //Construct all projects
   // ===========================================
   function Project(rawData){
-    for(var key in rawData){
+    for(let key in rawData){
       this[key] = rawData[key];
     }
   }
   // create the object, render it with handlebars
   // ===========================================
   Project.prototype.toHtml = function(){
-    var source = $('#project-template').text();
-    var templateRender = Handlebars.compile(source);
+    let source = $('#project-template').text();
+    let templateRender = Handlebars.compile(source);
     // create table of contents
     $('#table-of-contents-list').append(
     $('<li>').append(
@@ -33,8 +33,8 @@
         $('#projects-here').append(addedProject.toHtml());
       });
       Project.addAllHandlers();
-    }else{
-      $.getJSON('/data/rawData.json')
+    } else {
+      $.getJSON('./data/rawData.json')
       //if success:
       .then((data) => {
         data.forEach((projectObject) => {
@@ -48,17 +48,20 @@
       });
     }
   };
+
   //Change main body of presentation, whether portfolio or main body
   // ===========================================
-  $(document).ready(() => {
-    Project.fetchAll();
-    $('aside').hide();
-    $('article').hide();
-    $('#main-nav-body').fadeIn(800);
-    if($('#projects-here').hasClass('main-intro')){
-      $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
-    }
-  });
+  (function(){
+    $(document).ready(() => {
+      Project.fetchAll();
+      $('aside').hide();
+      $('article').hide();
+      $('#main-nav-body').fadeIn(800);
+      if($('#projects-here').hasClass('main-intro')){
+        $('#projects-here').removeClass('main-intro').addClass('main-intro-big');
+      }
+    });
+  })();
   //encapsulate all on click handlers
   // ===========================================
   Project.addAllHandlers = () => {
