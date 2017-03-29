@@ -1,6 +1,11 @@
 /*Desktop/non-ghetto tablets Compatibility
 =========================================================================================*/
 @media only screen and (max-width: 740px) {
+  /*
+  =============================================*/
+  #table-of-contents-list:hover{
+    color: #222222;
+  }
   /*Adds an rgba background with opacity to every div element on the page
   =============================================*/
   .divs {
@@ -121,6 +126,13 @@
     text-align: center;
     background-color: rgba(200, 200, 200, 0.70);
   }
+
+  /*
+  =============================================*/
+  #table-of-contents-list{
+    font-size: 1.5em;
+    color: #222222;
+  }
   /*table of contents for the projects floated to the left of the slideshow
   =============================================*/
   .table-of-contents{
@@ -129,7 +141,7 @@
     margin-top: 0;
     min-width: 17.5vw;
     max-width: 17.5vw;
-    font-size: 0.85em;
+    font-size: 1.5em;
   }
   .main-intro{
     float: left;
@@ -148,7 +160,7 @@
     margin-left: 1.5em;
     text-align: left;
     list-style: lower-roman;
-    font-size: 0.85em;
+    font-size: 1.5em;
   }
   #slideshow-article {
     display: block;

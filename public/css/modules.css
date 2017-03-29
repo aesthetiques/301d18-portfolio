@@ -1,4 +1,4 @@
-/*table of contents for the projects floated to the left of the slideshow
+/*nav-bar adjustments for clarity and style
 =============================================*/
 .slide-left a{
   line-height: 1.15;
@@ -7,6 +7,8 @@
 .slide-left a:hover{
   background-color: rgba(070, 070, 070, 0.85);
 }
+/*table of contents for the projects floated to the left of the slideshow
+=============================================*/
 .table-of-contents{
   float: left;
   text-align: left;
@@ -77,3 +79,6 @@
   font-size: 1em;
   }
 }
+
+/* Slideshow picture sizing.
+=============================================*/
