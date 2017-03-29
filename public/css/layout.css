@@ -1,6 +1,11 @@
 /*Desktop/non-ghetto tablets Compatibility
 =========================================================================================*/
 @media only screen and (max-width: 740px) {
+  /*
+  =============================================*/
+  #table-of-contents-list:hover{
+    color: #222222;
+  }
   /*Adds an rgba background with opacity to every div element on the page
   =============================================*/
   .divs {
@@ -8,6 +13,23 @@
     margin: 30px 0px;
     background-color: rgba(200, 200, 200, 0.70);
   }
+  /*Adds some header adjustments.
+  =============================================*/
+  body .header {
+    display: block;
+    position: absolute;
+    min-width: 85vw;
+    height: 7.5vh;
+    margin-top: 5vh;
+    padding: 0;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px #000;
+    font-size: 2em;
+    line-height: 1.15;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.70);
+  }
+
   /*table of contents for the projects floated to the left of the slideshow
   =============================================*/
   .table-of-contents{
@@ -20,7 +42,7 @@
     overflow: wrap;
   }
   .table-of-contents li{
-    margin-left: 1.15em;
+    margin-left: 0.85em;
     text-align: left;
     list-style: lower-roman;
     font-size: 0.6em;
@@ -45,6 +67,11 @@
   }
   #slideshow-article img{
     background: rgba(013,013,013, .85);
+  }
+  .the-projects img{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   }
   /* Clear footer and projects from floats slideshow
   =============================================*/
@@ -71,10 +98,9 @@
     position: fixed;
     min-width: 85vw;
     height: 5vh;
-    border: 2px dashed blue;
     margin-top: 0px;
-    /*margin-bottom: 1px;*/
     background-color: rgba(013, 013, 013, 0.85);
+    z-index: 2;
   }
   .nav-bar a{
     font-size: 2em;
@@ -91,11 +117,21 @@
     position: absolute;
     min-width: 85vw;
     height: 7.5vh;
-    margin-top: 5.2vh;
+    margin-top: 5vh;
     padding: 0;
-    text-align: left;
-    border: 2px dashed #FF0000;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px #000;
+    font-size: 4.5em;
+    line-height: 0.8;
+    text-align: center;
     background-color: rgba(200, 200, 200, 0.70);
+  }
+
+  /*
+  =============================================*/
+  #table-of-contents-list{
+    font-size: 1.5em;
+    color: #222222;
   }
   /*table of contents for the projects floated to the left of the slideshow
   =============================================*/
@@ -105,7 +141,7 @@
     margin-top: 0;
     min-width: 17.5vw;
     max-width: 17.5vw;
-    font-size: 0.85em;
+    font-size: 1.5em;
   }
   .main-intro{
     float: left;
@@ -124,7 +160,7 @@
     margin-left: 1.5em;
     text-align: left;
     list-style: lower-roman;
-    font-size: 0.85em;
+    font-size: 1.5em;
   }
   #slideshow-article {
     display: block;
@@ -133,6 +169,11 @@
   }
   #slideshow-article img{
     background: rgba(013,013,013, .85);
+  }
+  .the-projects img{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   }
   /* Clear footer and projects from floats slideshow
   =============================================*/

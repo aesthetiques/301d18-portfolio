@@ -1,31 +1,11 @@
-/*header and nav-bar special borders, fixed nav bar
+/*nav-bar adjustments for clarity and style
 =============================================*/
-.nav-bar {
-  display: block;
-  top: 0px;
-  position: fixed;
-  min-width: 85vw;
-  height: 4.5vh;
-  border: 2px dashed blue;
-  margin-top: 0px;
-  margin-bottom: 1px;
-  background-color: rgba(013, 013, 013, 0.85);
-  z-index: 2;
+.slide-left a{
+  line-height: 1.15;
+  margin-right: .3em;
 }
 .slide-left a:hover{
   background-color: rgba(070, 070, 070, 0.85);
-  border-radius: .1em;
-}
-body .header {
-  display: block;
-  position: absolute;
-  min-width: 85vw;
-  height: 7.5vh;
-  margin-top: 4.8vh;
-  padding: 0;
-  text-align: left;
-  border: 2px dashed #FF0000;
-  background-color: rgba(200, 200, 200, 0.70);
 }
 /*table of contents for the projects floated to the left of the slideshow
 =============================================*/
@@ -58,6 +38,20 @@ body .header {
   /*header and nav-bar special borders, fixed nav bar
   =============================================*/
   .nav-bar {
+    display: block;
+    top: 0px;
+    position: fixed;
+    min-width: 85vw;
+    height: 5vh;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    background-color: rgba(013, 013, 013, 0.85);
+    z-index: 2;
+  }
+  .slide-left a:hover, .slide-left a:focus{
+    background-color: rgba(070, 070, 070, 0.85);
+  }
+  .nav-bar {
     overflow: hidden;
   }
   .nav-burger{
@@ -83,18 +77,8 @@ body .header {
   }
   .slide-left.show a{
   font-size: 1em;
-}
-  body .header {
-    display: block;
-    position: absolute;
-    min-width: 85vw;
-    height: 5vh;
-    margin-top: 5.2vh;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: left;
-    font-size: 1.65em;
-    border: 2px dashed #FF0000;
-    background-color: rgba(200, 200, 200, 0.70);
   }
 }
+
+/* Slideshow picture sizing.
+=============================================*/
