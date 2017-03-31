@@ -9,7 +9,7 @@
       $('#content').removeClass('main-intro-big').addClass('main-intro');
     }
     $('aside').fadeIn(800);
-    $('#project-index').fadeIn(800);
+    $('#project-body').fadeIn(800);
   };
   $('document').ready(function(){
     $('#table-of-contents-list a').on('click', function(){
@@ -18,10 +18,6 @@
       console.log(`article[data-project="${$(this).text()}"]`);
     });
   });
-// expand menu in Mobile
-// ==============================================
-  $('.nav-burger').on('click', () => {
-    $('.slide-left').toggleClass('show');
-  });
+
   module.portfolioView = portfolioView;
 })(window);

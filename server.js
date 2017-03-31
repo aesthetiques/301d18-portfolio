@@ -29,10 +29,3 @@ function proxyGitHub(req, res){
 app.listen(PORT, function() {
   console.log(`you are on port number: http://localhost:${PORT}, sucka.`);
 });
-
-//Write a new route that will handle a request and send the new.html file back to the user
-//to be used later on
-// app.get('/new', function(request, response){
-//   console.log('Make a new page');
-//   response.sendFile('public/new.html', {root: '.'});
-// });
