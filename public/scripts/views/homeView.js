@@ -4,7 +4,7 @@
 
   homeView.init = () =>{
     $('aside').hide();
-    $('#project-index').hide();
+    $('#project-body').hide();
     $('#index-body').fadeIn(500);
     if($('#content').hasClass('main-intro')){
       $('#content').removeClass('main-intro').addClass('main-intro-big');

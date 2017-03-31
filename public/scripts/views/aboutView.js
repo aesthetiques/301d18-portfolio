@@ -1,13 +1,17 @@
 'use strict';
 
-const aboutView = {};
+(function(module){
+  const aboutView = {};
 
-aboutView.init = () =>{
-  //   $('aside').hide();
-  //   $('article').hide();
-  //   $('#index-body').fadeIn(500);
-  //   if($('#content').hasClass('main-intro')){
-  //     $('#content').removeClass('main-intro').addClass('main-intro-big');
-  //   }
-  // });
-};
+  aboutView.init = () =>{
+    $('aside').hide();
+    $('#project-body').hide();
+    $('#index-body').hide();
+    $('#about-body').fadeIn(500);
+    if($('#content').hasClass('main-intro')){
+      $('#content').removeClass('main-intro').addClass('main-intro-big');
+    }
+  };
+
+  module.aboutView = aboutView;
+})(window);
