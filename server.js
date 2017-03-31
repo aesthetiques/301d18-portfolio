@@ -3,13 +3,14 @@
 //Initialize your project using NPM to create and populate a package.json file
 const express = require('express');
 const requestProxy = require('express-request-proxy');
-//Require the Express package that you installed via NPM, and instantiate the app
-//Remember to install express, and be sure that it's been added to your package.json as a dependency
+const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 //Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 //Using the response object, send the index.html file back to the user
 app.get('*', function(request, response) {
