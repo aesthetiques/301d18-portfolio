@@ -3,26 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-
     <!-- css sheets -->
     <link rel="stylesheet" href="vendor/styles/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
-
     <!-- owl carousel links -->
     <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.css">
-
     <!-- jQ 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     <!-- Handlebars Template -->
     <script id="project-template" type="text/x-handlebars-template">
       <article class="the-projects" data-project="{{title}}" id="{{title}}">
@@ -45,9 +40,9 @@
       <!-- Insert navigation items here -->
       <nav class="nav-burger">&#9776;</nav>
       <div class="slide-left">
-        <a href="#home-nav" id="home-nav">Home</a>
-        <a href="#about-me" id="about-me">About</a>
-        <a href="#portfolio" id="portfolio-nav">Portfolio</a>
+        <a href="/" id="home-nav">Home</a>
+        <a href="/about" id="about-me">About</a>
+        <a href="/portfolio" id="portfolio-nav">Portfolio</a>
       </div>
     </nav>
 
@@ -72,9 +67,9 @@
       </aside>
 
       <!-- main document body -->
-      <main id="projects-here" class="main-intro divs">
+      <main id="content" class="main-intro divs">
         <!-- Add intro here, with the about me, -->
-        <article id="main-nav-body">
+        <article id="index-body">
           <div>
             <h1>Lorem Ipsum</h1>
             <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
@@ -91,10 +86,10 @@
             <p>Cras consequat libero ornare, ultricies odio vitae, interdum erat. Suspendisse venenatis efficitur velit a varius. Nam tristique massa quis ante ultrices posuere. Quisque ultrices enim diam, ut vehicula magna pharetra id. Donec imperdiet ipsum fermentum, suscipit elit sit amet, ornare urna. Integer erat tortor, ornare ullamcorper ante cursus, egestas hendrerit lacus. Sed elementum enim quis massa luctus congue. Suspendisse eget venenatis lacus, ut porttitor nibh.</p>
 
             <p>Vivamus iaculis blandit dictum. Ut tincidunt hendrerit ligula nec euismod. Nulla facilisi. Donec ipsum elit, commodo sit amet justo sit amet, facilisis blandit dui. Nam sed tortor orci. Sed scelerisque faucibus risus in pharetra. Cras ullamcorper dapibus sem, ut varius nulla ultricies at. Suspendisse metus justo, vehicula in metus in, mattis pharetra orci.</p>
-          </div>
+        </div>
         </article>
         <!-- Add projects to this article -->
-        <article id="projects-here-pls">
+        <article id="project-index">
         </article>
 
 
@@ -104,12 +99,17 @@
     <footer class="footer borders">
       <!-- AS PER Owl Carousel Instructions -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
       <script src="owl-carousel/owl.carousel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     </footer>
     <!-- JS Docs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <script type="text/javascript" src="scripts/rawData.js"></script>
     <script type="text/javascript" src="scripts/slideshow.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/views/homeView.js"></script>
+    <script type="text/javascript" src="scripts/views/aboutView.js"></script>
+    <script type="text/javascript" src="scripts/views/portfolioView.js"></script>
+    <script type="text/javascript" src="scripts/controllers/routes.js"></script>
+
   </body>
 </html>

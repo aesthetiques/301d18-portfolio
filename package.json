@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/aesthetiques/301d18-portfolio#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-request-proxy": "^2.0.0",
+    "pagejs": "0.0.1-alpha",
+    "pg": "^6.1.5"
   }
 }
