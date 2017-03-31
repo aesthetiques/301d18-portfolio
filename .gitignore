@@ -60,5 +60,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# Personal Access Tokens
+public/scripts/models/github-token.js
 
 # End of https://www.gitignore.io/api/node
