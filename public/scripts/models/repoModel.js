@@ -16,6 +16,7 @@
   repos.appendRepoByAttribute = function(){
     repos.all.forEach(repo => $('#about-body').append(`<p>${repo.name}<br><a href="${repo.html_url}">repo&rarr;</a><hr></p>`));
   };
+  // data => data.map(repo => $('#about-body').append(`<p>${repo.name}</p>`),
 
   module.repos = repos;
 })(window);
