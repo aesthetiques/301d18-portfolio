@@ -1,11 +1,11 @@
 'use strict';
 
 (function(module){
-
   const portfolioView = {};
 
   portfolioView.init = () => {
     $('#index-body').hide();
+    $('#about-body').hide();
     if($('#content').hasClass('main-intro-big')){
       $('#content').removeClass('main-intro-big').addClass('main-intro');
     }
@@ -18,6 +18,9 @@
       $(`article[data-project="${$(this).text()}"]`).show();
       console.log(`article[data-project="${$(this).text()}"]`);
     });
+  });
+  $('#show-all').on('click', function(){
+    $('.the-projects').show();
   });
 
   module.portfolioView = portfolioView;

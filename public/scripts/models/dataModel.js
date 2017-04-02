@@ -1,7 +1,6 @@
 'use strict';
 
 (function(module){
-
   let projects = [];
   //Construct all instances of projects
   // ===========================================
@@ -59,5 +58,5 @@
   $('.nav-burger').on('click', () => {
     $('.slide-left').toggleClass('show');
   });
-
+  module.Project = Project;
 })(window);

@@ -11,6 +11,7 @@
     if($('#content').hasClass('main-intro')){
       $('#content').removeClass('main-intro').addClass('main-intro-big');
     }
+    repos.requestRepos(repos.appendRepoByAttribute);
   };
 
   module.aboutView = aboutView;
