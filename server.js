@@ -13,9 +13,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Using the response object, send the index.html file back to the user
+app.get('/github/*', proxyGitHub);
+
 app.get('*', function(request, response) {
   response.sendFile('public/index.html', {root: '.'});
 });
+
+//proxy a github request based on the environment tokens
 function proxyGitHub(req, res){
   console.log('routing a request for a github resource');
   (requestProxy({
